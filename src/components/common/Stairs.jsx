@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useLocation } from 'react-router-dom';
-import { div } from 'three/tsl';
 
 const Stairs = (props) => {
 
