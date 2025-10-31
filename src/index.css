@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: font1;
+    src: url(../fonts/Lausanne-300.woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url(../fonts/Lausanne-500.woff2);
+}
+body{
+    background-color: rgb(45, 44, 44);
+    color: white;
+    /* overflow-x: hidden; */
+}
+
+.moveLink{
+    opacity: 0;
+}
+
+.link:hover .moveLink{
+    opacity: 1;
+    transition: all ease 0.1s;
+
+}
+
+.moveX{
+    animation: moveAnimation 10s linear infinite;
+}
+
+@keyframes moveAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.arrowParent:hover .arrowChild{
+    background-color: #D3FD50;
+}
+
+
+.imageGroup :hover .Group{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
