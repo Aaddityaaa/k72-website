@@ -55,14 +55,14 @@ const Projects = () => {
   })
 
   return (
-    <div className='p-2 lg:p-4'>
+    <div className='p-2 pt-25 lg:p-4'>
       <div>
         <h2 className='font-[font2] text-[14vw] lg:text-[7vw] uppercase pt-[40vh]'>Projects</h2>
       </div>
       <div className='lol -lg:mt-7'>
-        {projects.map(function (elem) {
+        {projects.map(function (elem,idx) {
           return (
-          <div className='hero w-full lg:h-[350px] flex flex-col lg:flex-row gap-1 mb-2'>
+          <div key={idx} className='hero w-full lg:h-[350px] h-[300px] flex flex-col lg:flex-row gap-1 mb-2'>
             <ProjectCard image1={elem.image1} image2={elem.image2}/>
           </div>
           )
