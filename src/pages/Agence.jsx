@@ -52,16 +52,16 @@ const Agence = () => {
 
     gsap.killTweensOf(moveRef1.current)
     gsap.to(moveRef1.current, {
-      transform: 'translateX(-30%)',
-      duration: 6,
+      transform: 'translateX(-70%)',
+      duration: 7,
       repeat: -1,
       ease: 'linear',
 
     })
     gsap.killTweensOf(moveRef2.current)
     gsap.to(moveRef2.current, {
-      transform: 'translateX(23%)',
-      duration: 8,
+      transform: 'translateX(50%)',
+      duration: 9,
       repeat: -1,
       ease: 'linear',
     })
@@ -136,71 +136,71 @@ const Agence = () => {
 
       <div ref={directorRef} className='h-screen w-full flex items-center justify-center relative'>
         <div className='w-[60vw] lg:w-[23vw] h-[95vw] lg:h-[35vw] rounded-2xl lg:rounded-4xl overflow-hidden lg:z-5'>
-          <img className='w-full h-full object-cover' src="https://k72.ca/images/teamMembers/SebR_640X960.jpg?w=640&h=960&s=81dfdbd4b658503ba32862901a1ea3ca" alt="director-img" />
+          <img className='w-full h-full object-cover' src="/my-img.jpg" alt="director-img" />
         </div>
         <div ref={moveRef1} className='absolute top-72 lg:top-25 flex gap-[40vw]'>
           <div>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>SÉBASTIEN</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>Aditya</h2>
           </div>
           <div>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>SÉBASTIEN</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>Aditya</h2>
           </div>
           <div>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>SÉBASTIEN</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>Aditya</h2>
           </div>
           <div>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>SÉBASTIEN</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>Aditya</h2>
           </div>
           <div>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>SÉBASTIEN</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>Aditya</h2>
           </div>
           <div>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>SÉBASTIEN</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>Aditya</h2>
           </div>
           <div>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>SÉBASTIEN</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase'>Aditya</h2>
           </div>
 
         </div>
         <div ref={moveRef2} className='z-6 absolute bottom-72 lg:bottom-30 flex gap-[70vw]'>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
           <div className='flex gap-[5vw] leading-[5.5vw] items-end'>
-            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Roy</h2>
+            <h2 className='text-[#D3FD50] text-[8vw] font-[font2] uppercase pt-2'>Singh</h2>
             <p className='text-white font-[font2] uppercase text-[2vw] leading-[1.5vw] shrink-0'>Assiciative creative director</p>
           </div>
         </div>
