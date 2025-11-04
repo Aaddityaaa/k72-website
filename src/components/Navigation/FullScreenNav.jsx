@@ -86,7 +86,7 @@ const FullScreenNav = () => {
                 <div className='lg:py-10 py-35 '>
 
                     <div className='link origin-top border-t border-white relative  '>
-                        <Link to="/projects">
+                        <Link to="/projects" onClick={() => setNavOpen(false)}>
                             <h1 className='font-[font2] text-[12vw] lg:text-[7vw] leading-[12vw] lg:leading-[7vw] py-2 lg:py-0   uppercase text-center'>Projects</h1>
                         <div className='moveLink absolute flex top-0 h-full bg-[#D3FD50] text-gray-900'>
                             <div className='moveX flex items-center gap-1 ' >
@@ -111,7 +111,7 @@ const FullScreenNav = () => {
                         </Link>
                     </div>
                     <div className='link origin-top border-t border-white relative  '>
-                        <Link to='/agence'>
+                        <Link to='/agence' onClick={() => setNavOpen(false)}>
                             <h1 className='font-[font2] text-[12vw] lg:text-[7vw] leading-[12vw] lg:leading-[7vw] py-2 lg:py-0   uppercase text-center'>Agency</h1>
                         <div className='moveLink absolute h-full  flex top-0 bg-[#D3FD50] text-gray-900'>
                             <div className='moveX flex items-center gap-1 ' >

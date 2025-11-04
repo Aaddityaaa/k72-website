@@ -37,32 +37,48 @@ const Projects = () => {
 
   gsap.registerPlugin(ScrollTrigger)
   
-  useGSAP(() => {
-    gsap.from('.hero',{
-      height: '100px',
-      stagger: {
-        amount: 0.4,
-      },
-      scrollTrigger: {
-        trigger: '.lol',
-        // markers: true,
-        start: 'top 90%',
-        end: 'top -50%',
-        scrub: true,
+  // useGSAP(() => {
+  //   gsap.from('.hero',{
+  //     height: '100px',
+  //     stagger: {
+  //       amount: 0.2,
+  //     },
+  //     scrollTrigger: {
+  //       trigger: '.lol',
+  //       // markers: true,
+  //       start: 'top 85%',
+  //       end: 'top -50%',
+  //       scrub: true,
 
-      }
-    })
-  })
+  //     }
+  //   })
+  // })
+  useGSAP(() => {
+  gsap.utils.toArray('.hero').forEach((elem) => {
+    gsap.from(elem, {
+      scale: 0.9,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: elem,
+        start: 'top 90%',
+        end: 'top 50%',
+        scrub: true,
+      },
+    });
+  });
+});
+
 
   return (
     <div className='p-2 pt-25 lg:p-4'>
       <div>
         <h2 className='font-[font2] text-[14vw] lg:text-[7vw] uppercase pt-[40vh]'>Projects</h2>
       </div>
-      <div className='lol -lg:mt-7'>
+      <div className='lol -lg:mt-15'>
         {projects.map(function (elem,idx) {
           return (
-          <div key={idx} className='hero w-full lg:h-[350px] h-[300px] flex flex-col lg:flex-row gap-1 mb-2'>
+          <div key={idx} className='hero w-full lg:h-[330px] h-[300px] flex flex-col lg:flex-row gap-1 mb-2'>
             <ProjectCard image1={elem.image1} image2={elem.image2}/>
           </div>
           )
